@@ -1,0 +1,152 @@
+*{margin: 0; padding: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: #000;}
+img{display: block; border: 0;}
+input{display: none;}
+
+
+body{
+    -ms-overflow-style: none;
+    }
+    
+   ::-webkit-scrollbar {
+     display: none;
+   }
+
+#wrap{
+    width: 1774px;
+    margin: 65px auto 0 auto;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+#title{
+    width: 190px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 36px;
+    position: fixed;
+    top: 70px;
+    left: 50px;
+}
+
+#checked_menu{
+    width: 1633px;
+    background-color: pink;
+    float: left;
+}
+
+#fix_wrap{
+    width: 190px;
+    height: 200px;
+    text-align: center;
+    position: fixed;
+    top: 120px;
+    left: 50px;
+}
+label{
+    width: 190px;
+    height: 50px;
+    font: 500 20px/50px 'san-serif';
+    cursor: pointer;
+    display: block;
+    transition: 1s;
+}
+
+#btn01, #btn02, #btn03, #btn04{
+    text-decoration: none;
+}
+
+/* click event */
+
+#tab01:checked~#con01{display: block;}
+#tab02:checked~#con02{display: block;}
+#tab03:checked~#con03{display: block;}
+#tab04:checked~#con04{display: block;}
+
+#tab01:checked~#fix_wrap #btn01{text-decoration: underline;}
+#tab02:checked~#fix_wrap #btn02{text-decoration: underline;}
+#tab03:checked~#fix_wrap #btn03{text-decoration: underline;}
+#tab04:checked~#fix_wrap #btn04{text-decoration: underline;}
+
+/* hover event */
+#btn03:hover{
+    text-decoration: underline;
+}
+#btn01:hover{
+    text-decoration: underline;
+}
+#btn02:hover{
+    text-decoration: underline;
+}
+#btn04:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* mid_container 레이아웃 설정 */
+.mid_container{
+    width: 1433px;
+    /* background-color: aqua; */
+    position: absolute;
+    left: 200px;
+    display: none;
+}
+.mid{
+    width: 50%;
+    float: left;
+}
+.mid img{
+    margin-bottom: 56px;
+    
+}
+.mid:nth-child(1) img{
+    float: right;
+    margin-right: 22px;
+}
+.mid:nth-child(2) img{
+margin-left: 22px;
+}
+.mid:nth-child(2){
+    padding-top: 70px;
+}
+
+#con03{
+    background-color: #000;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+#fix_back{
+    width: 100px;
+    text-align: center;
+    float: right;
+    font-family: 'Anton', sans-serif;
+    font-size: 33px;
+    position: fixed;
+    top: 70px;
+    right: 70px;
+}
+
+/* 이미지 사이즈 */
+
+#ai1 , #ai3 , #ai2{
+    width: 498px;
+}
+#ai3{
+    width: 580px;
+}
+#ps1{
+    width: 524px;
+}
+#ps2{
+    width: 416px;
+}

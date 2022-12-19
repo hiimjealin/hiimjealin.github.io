@@ -1,0 +1,371 @@
+*{margin: 0; padding: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: #000;}
+img{display: block; border: 0;}
+
+
+body{
+    -ms-overflow-style: none;
+    }
+    
+::-webkit-scrollbar {
+     display: none;
+}
+
+
+
+#wrap{
+    width: 100%;
+    position: relative;
+    top: 0; left: 0;
+    position: fixed;
+    overflow: hidden;
+}
+
+#top_wrap{
+    width: 100%;
+    height: 1080px;
+    float: left;
+}
+
+header,#sec01{
+    width: 100%;
+    float: left;
+}
+
+/* header */
+header{
+    /* height: 210px; */
+    height: 130px;
+    padding-top: 55px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+#menu_wrap{
+    width: 1763px;
+    height: 69px;
+    margin: 0 auto;
+    border: 3px solid #000;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: default;
+}
+#menu_wrap>li{
+    width: 25%;
+    height: 69px;
+    font: 700 20px/69px '';
+    float: left;
+}
+.sub_menu p{
+    width: 100%;
+    height: 50px;
+    /* background-color: aqua; */
+    font: 400 16px/25px '';
+    margin-bottom: 25px;
+}
+#menu_wrap>li:nth-child(1){
+    cursor: pointer;
+}
+.sub_menu:nth-child(1){
+    cursor: default;
+}
+#point{
+    font-style: italic;
+    font-weight: 900;
+}
+/* hover event */
+#menu_wrap:hover{
+    height: 160px;
+}
+header:hover{
+    height: 240px;
+}
+
+/* section01 */
+
+#sec01{
+    height: 710px;
+    position: relative;
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+}
+#sec_01{
+    width: 100%;
+    position: relative;
+}
+#sec01 img{
+    display: inline;
+    width: 160px;
+}
+span{
+    color: #fff;
+}
+
+#artwork a{
+    width: 899px;
+    font-size: 180px;
+    position: absolute;
+    left: 35%;
+    transition: 0.3s;
+    
+}
+#artwork:hover a{
+    font-size: 190px;
+}
+
+#artwork:hover img{
+    animation: artMove 0.5s linear infinite;
+}
+
+#sec_02{
+    width: 100%;
+    position: relative;
+}
+
+#project{
+    width: 1240px;
+    font-size: 240px;
+    letter-spacing: 20px;
+    -webkit-text-stroke: 7px #000;
+    color: #fff;
+    position: absolute;
+    top: 25%; left: 15%;
+    transition: 0.3s;
+    cursor: pointer;
+    
+
+}
+
+#project img{
+    width: 210px;
+    animation: pMove 5s cubic-bezier(.88,1.05,.14,.01) infinite alternate;
+}
+
+#project:hover{
+    color: #000;
+    font-size: 250px;
+    animation-name: pMove;
+    animation-play-state: paused;
+    
+}
+#type_03{
+    width: 1340px;
+    position: absolute;
+    top: 65%; left: 20%;
+
+}
+#about a{
+    width: 655px;
+    font-size: 138px;
+    float: left;
+    transition: 0.3s;
+    /* position: absolute; */
+}
+#about:hover a{
+    font-size: 148px;
+}
+#about:hover img{
+    animation: aboutMove 3s linear infinite alternate;
+}
+#hello{
+    width: 660px;
+    font-size: 230px;
+    float: left;
+    /* position: absolute; */
+}
+
+
+
+/* sec01 hover animation */
+
+@keyframes artMove{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes pMove{
+    /* 0%{
+        transform: rotate(0deg);
+    } */
+    0%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        animation-delay: 0.5;
+        transform: rotate(0);
+        
+    }
+    100%{
+        transform: rotate(155deg);
+    }
+
+}
+
+@keyframes aboutMove{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section02 project*/
+#bottom_wrap{
+    width: 100%;
+    height: 920px;
+    /* background-color: yellowgreen; */
+    float: left;
+    overflow: scroll;
+    position: relative;
+}
+#sec02{
+    width: 1726px;
+    margin: 0 auto;
+    /* background-color: palevioletred; */
+    position: relative;
+    overflow: hidden;
+    border-bottom: 2px solid #000;
+    
+}
+
+#fix_head{
+    width: 1726px;
+    margin: 0 auto;
+    height: 128px;
+    border-bottom: 2px solid #000;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 36px;
+    letter-spacing: 5px;
+    position: relative;
+    float: left;
+    background-color: #fff;
+    z-index: 99;
+}
+#fix_head h2, #fix_head h3{
+    float: left;
+    font-size: 36px;
+    letter-spacing: 5px;
+    position: absolute;
+    bottom: 10px;
+}
+#fix_head h2{
+    left: 50%; margin-left: -75px;
+}
+#fix_head h3{
+    right: 15px;
+    cursor: pointer;
+}
+
+/* project container */
+#sec02_container{
+    width: 100%;
+    margin-top: 68px;
+    float: left;
+    margin-bottom: 300px;
+}
+.con{
+    width: 849px;
+    height: 664px;
+    float: left;
+    /* background-color: aliceblue; */
+    font-weight: 900;
+    line-height: 25px;
+}
+.con:first-child{
+    margin-right: 28px;
+}
+.view{
+    width: 100%;
+    height: 580px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.view:hover video{
+    transform: scale(110%);
+}
+video{
+    width: 608px;
+    transition: 0.5s;
+}
+.name{
+    margin-top: 10px;
+}
+
+/* footer */
+footer{
+    width: 1920px;
+    height: 120px;
+    float: left;
+    /* border-top: 2px solid #000; */
+    overflow: hidden;
+}
+#in_footer{
+    width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#move_wrap{
+    width: 3840px;
+    margin-top: 15px;
+    animation: marquee 8s infinite linear;
+}
+.moving{
+    width: 1920px;
+    float: left;
+    font-size: 90px;
+    /* font-family: 'Anton', sans-serif; */
+}
+@keyframes marquee{
+
+
+    0%{
+        margin-left: 0;
+    }
+
+
+    100%{
+        margin-left: -1920px;
+    }
+
+}
+
+

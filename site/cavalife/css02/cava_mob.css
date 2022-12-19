@@ -1,0 +1,524 @@
+@media all and (max-width : 760px){
+
+    #wrap{
+        width: 100%;
+        overflow: hidden;
+    }
+    header, section, footer{
+        width: 100%;
+        float: left;
+    }
+    /* header */
+    header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+    #logo{
+        position: fixed;
+        top: 0;
+        left: 20px;
+        width: 100px;
+        height: 100px;
+        float: left;
+    
+    }
+    #logo img{
+        width: 100%;
+        
+    }
+    #icon_wrap{
+        width: 130px;
+        height: 27px;
+        /* background-color: bisque; */
+        float: right;
+        margin-right: 20px;
+        margin-top: 40px;
+    }
+    
+    #icon_wrap img{
+        margin: 0 7px;
+    }
+    /* section sec01 */
+    #sec01{
+        height: 700px;
+        background: url(../cava_img/sec03_backgroundimg.jpg) no-repeat center/cover;
+        display: flex;
+        align-items: center;
+    
+    }
+    #typo_img{
+        width: 60%;
+        margin:auto;
+    }
+    
+    #typo_img img{
+        width: 100%;
+    }
+    /* sec02 */
+   #sec02{
+    display: none;
+   }
+    /* sec03 */
+    
+    #sec03{
+        height: 500px;
+        /* background-color: wheat; */
+    }
+    #container{
+       display: none;
+    }
+    #mo_container{
+        width: 98%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    #left_wrap{
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+    
+    .left_con{
+        width: 100%;
+        height: 33.333%;
+        border: 1.5px solid #000;
+        box-sizing: border-box;
+        border-top: 0;
+        overflow: hidden;
+        position: relative;
+        transition: 1s;
+    }
+    .left_con img{
+        height: 100%;
+    }
+    .left_top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* right */
+    #right_wrap{
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+    #right_top{
+        width: 100%;
+        height: 50%;
+    }
+    #con_menu{
+        width: 100%;
+        height: 100%;
+    }
+    #con_menu li{
+        width: 100%;
+        height: 25%;
+        border-bottom: 1.5px solid #000;
+        border-right: 1.5px solid #000;
+        box-sizing: border-box;
+    }
+    #con_menu li:last-child{
+        border-bottom: 0;
+    }
+    #con_menu li{
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding-left: 5px;
+    }
+    
+    #right_bottom{
+        width: 100%;
+        height: 50%;
+        border: 1.5px solid #000;
+        box-sizing: border-box;
+        border-left: 0;
+        position: relative;
+        transition: 1s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #right_bottom img{
+        height: 100%;
+    }
+    
+    
+    /* sec04 */
+    
+    #sec04{
+        display: none;
+    }
+    #container02{
+        width: 1920px;
+        /* background-color: antiquewhite; */
+        margin: 0 auto;
+        overflow: hidden;
+        
+        
+    }
+    #hot_title{
+        width: 186px;
+        height: 47px;
+        margin: 0 auto;
+        font: 700 30px/47px '';
+        text-align: center;
+        color: #000;
+        text-decoration: underline;
+        margin-bottom: 40px;
+    }
+    #w_wrap{
+        width: 5950px;
+        height: 57px;
+        margin-bottom: 46px;
+        position: relative;
+    }
+    /* 작가명 들어가는 곳(이벤트도 있는 부분) */
+    
+    .btn{
+        width: 95px;
+        height: 100%;
+        border-top: 1.5px solid #000;
+        border-bottom: 1.5px solid #000;
+        box-sizing: border-box;
+        float: left;
+        
+    }
+    .le{
+        border-left: 1.5px solid #000;
+    }
+    .rig{
+        border-right: 1.5px solid #000;
+        position: absolute;
+        top: 0; left: 1825px;
+    }
+    #names{
+        width: 5190px;
+        height: 100%;
+        /* background-color: violet; */
+        float: left;
+    }
+    #name_wrap,#name_wrap02,#name_wrap03{
+        width: 1730px;
+        height: 100%;
+        border: 1.5px solid #000;
+        box-sizing: border-box;
+        float: left;
+        /* background-color: aqua; */
+    }
+    
+    #name_wrap li,#name_wrap02 li,#name_wrap03 li{
+        width: 20%;
+        height: 100%;
+        border-right: 1.5px solid #000;
+        box-sizing: border-box;
+        float: left;
+        font: 700 35px/57px '';
+        text-align: center;
+    }
+    #names li:nth-child(5){
+        border-right: 0;
+    }
+    
+    .rig img{
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    
+    
+    
+    
+    /* 인풋들어가는 부분 */
+    
+    #search{
+        margin: 0 auto;
+        width: 574px;
+        height: 57px;
+        /* border: 2px solid #000; */
+        position: relative;
+        
+    }
+    
+    #sea{
+        width: 574px;
+        height: 57px;
+        border: 2px solid #000;
+        box-sizing: border-box;
+        font: 20px/57px '';
+        padding-left: 17px;
+    }
+    #bbtn{
+        display: none;
+    }
+    
+    #bttn{
+        position: absolute;
+        top: 13px;right: 17px;
+        cursor: pointer;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #more_link{
+        width: 292px;
+        height: 30px;
+        /* background-color: aquamarine; */
+        margin: 0 auto;
+        font: 600 22px/30px '';
+        text-decoration: underline;
+        margin-top: 40px;
+        position: relative;
+    }
+    #more_link img{
+        top: 10%;
+        margin-left: 10px;
+        position: absolute;
+    }
+    /* sec05 */
+    
+    #sec05{
+       display: none;
+    }
+    #container03{
+        width: 1880px;
+        height: 472px;
+        margin: 0 auto;
+        margin-top: 260px;
+    }
+    .sub_conWrap{
+        width: 940px;
+        height: 100%;
+        float: left;
+        /* background-color: pink; */
+    }
+    .sub_box01{
+        width: 100%;
+        height: 263px;
+        float: left;
+        border-bottom: 3.5px solid #000;
+        box-sizing: border-box;
+        position: relative;
+    }
+    #title_wrap02{
+        width: 720px;
+        height: 210px;
+        border: 3px solid #000;
+        border-radius: 50%;
+        text-align: center;
+        font: 300 100px/210px '';
+    }
+    .sub_box01 p{
+        font-size: 35px;
+        float: left;
+        position: absolute;
+        bottom: 47px;
+        font-weight: 500;
+        margin-left: 30px;
+        text-decoration: underline;
+    }
+    /* 글이 있는부분 sell with us! */
+    
+    .sub_copy{
+        width: 100%;
+        overflow: hidden;
+        padding-top: 40px;
+    }
+    .sub_co{
+        float: left;
+    }
+    .sub_copy p{
+        font-size: 27px;
+        line-height: 45px;
+        font-weight: 500;
+    }
+    .sub_co{
+        width: 50%;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+    /* sec06 */
+    #sec06{
+        display: none;
+        
+    }
+    #img_wrap{
+        width: 1920px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    #sec06 img{
+        height: 100%;
+        
+    }
+    #typo_box{
+        width: 470px;
+        height: 220px;
+        /* background-color: aqua; */
+        position: absolute;
+        top: 0; left: 245px;
+    }
+    
+    /* 글이들어 있는 부분 */
+    
+    #sec06_title{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    #sec06_copy{
+        font-size: 20px;
+        position: absolute;
+        bottom: 0;
+        line-height: 27px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    /* footer */
+    footer{
+        display: none;
+    }
+    #in_footer{
+        width: 1470px;
+        height: 100%;
+        /* background-color: dimgray; */
+        margin: 0 auto;position: relative;
+    }
+    #f_center{
+        width: 850px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        /* background-color: aqua; */
+        padding-top: 47px;
+        margin-left: 250px;
+    }
+    #f_center li{
+        float: left;
+        margin-right: 40px;
+        font-size: 23px;
+    }
+    #f_center li:last-child{
+        margin-right: 0;
+    }
+    #f_bottom_le{
+        float: right;
+        /* background-color: aqua; */
+        position: absolute;
+        bottom: 26px; right: 20px;
+    }
+    
+    #f_bottom_le li{
+        float: left;
+        margin-right: 30px;
+        font-size: 12px;
+       
+    }
+    #f_bottom_le li:last-child{
+        margin-right: 0;
+    }
+    #f_bottom_le>li a{
+        color: rgba(83, 83, 83, 0.6);
+    }
+    
+    #f_bottom_ri{
+        float: left;
+        font-size: 12px;
+        color: rgb(83, 83, 83, 0.6);
+        line-height: 20px;
+        position: absolute;
+        bottom: 14px;
+    }
+    #f_bottom_ri p{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    
+    
+    /* sns contents */
+    #follow{
+        /* background-color: aqua; */
+        position: absolute;
+        top: 47px; left: 0;
+    }
+    #follow p{
+        font-size: 23px;
+        margin-bottom: 14px;
+    }
+    
+    #sns_img{
+        width: 160px;
+        height: 23px;
+        /* background-color: violet; */
+    }
+    .sns{
+        width: 28px;
+        height: 100%;
+        margin-right: 10px;
+        float: left;
+    }
+    .sns img{
+        height: 100%;
+    }
+    /* language contents */
+    
+    #lang{
+        /* background-color: aqua; */
+        position: absolute;
+        top: 47px; right: 0;
+    }
+    #lang p{
+        font-size: 23px;
+        margin-bottom: 14px;
+    }
+    #lang_wrap{
+        width: 240px;
+        height: 25px;
+        /* background-color: violet; */
+    }
+    .la{
+        float: left;
+        margin-right: 15px;
+        height: 16px;
+        font-size: 18px;
+    }
+    
+    .la img{
+        height: 100%;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+    

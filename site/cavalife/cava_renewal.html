@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카바라이프 리디자인</title>
+    <link rel="stylesheet" href="css02/cava_pc.css" type="text/css">
+    <link rel="stylesheet" href="css02/cava_mob.css" type="text/css">
+    <link rel="stylesheet" href="css02/reset.css" type="text/css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+        var mask_w = $('.move_wrap').width();
+
+        $('.rig').click(function(){
+            $('#names').animate({
+                left : -mask_w,
+            },function(){
+                $('#names').css({
+                    left : 0,
+                }).find('.move_wrap').first().appendTo('#names');
+            });
+        });
+
+        function time(){
+            si = setInterval(function(){
+                $('.rig').trigger('click');
+            },3000);
+        }
+        time();
+
+        $('.rig').hover(function(){
+            clearInterval(si);
+        },function(){
+            time();
+        });
+
+
+
+
+
+        });//end
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <div id="logo"><a href="#"><img src="cava_img/cava_logo.png" alt="로고이미지"></a>
+            </div>
+            <div id="icon_wrap">
+                <a href="#"><img src="cava_img/profil_white.png" alt="프로필 아이콘"></a>
+                <a href="#"><img src="cava_img/heart_whtie.png" alt="하트 아이콘"></a>
+                <a href="#"><img src="cava_img/shopping_white.png" alt="장바구나 아이콘"></a>
+            </div>
+        </header>
+
+
+
+        <!-- section -->
+        <section id="sec01">
+            <div id="typo_img"><img src="cava_img/bener_typo.png" alt="타이포 이미지"></div>
+        </section>
+
+        <!-- sec02 -->
+        <section id="sec02">
+            <div id="about_img">
+                <img src="cava_img/about.jpeg" alt="백그라운드 이미지">
+                <div id="about_wrap">
+                    <div id="logo02"><img src="cava_img/cava_logo.png" alt="로고이미지"></div>
+                    <div id="title">About. CAVALIFE</div>
+                    <div id="copy">카바 라이프는 전세계 문화 예술계 창작자들을 발굴하고 소개하며,<br/> 
+                        새로움과 다양성을 추구하는 소비자들을 위해 탄생한<br/>
+                        아트 커머스 브랜드입니다. <br/>
+                        2018년 4월 www.ca-va.life 온라인 플랫폼을 론칭하여 페인팅,<br/>
+                         세라믹, 그래픽 디자인, 가구, 텍스타일, 유리, 사진, 패션, 비디오 <br/>
+                         아트, 음악 등 다양한 장르에서 두각을 나타내는 작가 800여명과<br/>
+                          함께 새로운 시각으로 편집하여 판매하고 있습니다. </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sec03 -->
+        <section id="sec03">
+
+            <!-- mobile -->
+
+            <div id="mo_container">
+                <div id="left_wrap">
+                    <div class="left_con left_top">
+                        <img src="cava_img/logo_ver.2.png" alt="">
+                    </div>
+                    <div class="left_con">
+                        <img src="cava_img/section_typo.png" alt="">
+                    </div>
+                    <div class="left_con">
+                        <img src="cava_img/picture_drawing.png" alt="">
+                    </div>
+                </div>
+
+                <div id="right_wrap">
+                    <div id="right_top">
+                        <ul id="con_menu">
+                            <li><a href="#">Graphic design
+                                <img src="cava_img/up-right-arrow.png" alt="">
+                            </a></li>
+                            <li><a href="#">Furniture
+                                <img src="cava_img/up-right-arrow.png" alt="">
+                            </a></li>
+                            <li><a href="#">Art
+                                <img src="cava_img/up-right-arrow.png" alt="">
+                            </a></li>
+                            <li><a href="#">Fashion
+                                <img src="cava_img/up-right-arrow.png" alt="">
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div id="right_bottom">
+                        <img src="cava_img/chair.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- pc_layout -->
+
+            <div id="container">
+                <!-- left -->
+                <div id="left_wrap">
+                    <div id="left_top"><img src="cava_img/sec03_main_img.png" alt="내부이미지">
+                    </div>
+                    <div class="left_con">
+                        <img src="cava_img/section_typo.png" alt="타이포이미지">
+                    </div>
+                    <div class="left_con">
+                        <div class="left_copy">
+                            NO.696 Huh Hyunjung 허현정<br/>
+                            ₩ 20,000<br/>
+                            <p> <<운행>> </p>
+                            디자인,아트
+                        </div>
+                        <img src="cava_img/picture_drawing.png" alt="그림 사진">
+                    </div>
+                </div>
+                <!-- right -->
+                <div id="right_wrap">
+                    <div id="right_title">
+                        <div id="title_wrap">PRODUCT</div>
+                    </div>
+                    <div id="con_wrap">
+                        <div class="right_con"><img src="cava_img/logo_ver.2.png" alt="로고이미지02"></div>
+                        <div class="right_con">
+                            <ul id="con_menu">
+                                <li></li>
+                                <li><a href="#">Graphic design
+                                    <img src="cava_img/up-right-arrow.png" alt="">
+                                </a></li>
+                                <li><a href="#">Furniture
+                                    <img src="cava_img/up-right-arrow.png" alt="">
+                                </a></li>
+                                <li><a href="#">Art
+                                    <img src="cava_img/up-right-arrow.png" alt="">
+                                </a></li>
+                                <li><a href="#">Fashion
+                                    <img src="cava_img/up-right-arrow.png" alt="">
+                                </a></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="right_con">
+                            <img src="cava_img/chair.png" alt="의자이미지">
+                            <div class="right_copy">
+                                NO.192 Studio illio 스튜디오 일리오<br/>
+                                ₩ 3,040,000<br/>
+                                <p> Speckled Random Stool </p>
+                                의자,스툴,벤치
+                            </div>
+                        </div>
+                        <div class="right_con">
+                            <img src="cava_img/metal.png" alt="저울이미지">
+                            <div class="right_copy">
+                                NO.741 KIMYUNHA 김윤하<br/>
+                                ₩ 150,000<br/>
+                                <p> totem pole #20 </p>
+                                오브제,기타
+                            </div>
+                        </div>
+                        <div class="right_con">
+                            <img src="cava_img/disital_design_typo.png" alt="타이포이미지">
+                            <div class="right_copy">
+                                NO.22 Yangheejae 양희재<br/>
+                                ₩ 30,000<br/>
+                                <p> March</p>
+                                그래픽 디자인,서체
+                            </div>
+                        </div>
+                        <div class="right_con">
+                            <img src="cava_img/white_dong.png" alt="덩어리이미지">
+                            <div class="right_copy">
+                                NO.766 herere 히어리<br/>
+                                ₩ 180,000<br/>
+                                <p> rugged sculpture</p>
+                                조각,세라믹
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sec04 -->
+        <section id="sec04">
+            <div id="container02">
+
+                <div id="hot_title">Hot artists</div>
+                <!-- hot arists -->
+                <div id="w_wrap">
+                    <div class="btn le"></div>
+                    <div id="names">
+                        <ul id="name_wrap" class="move_wrap">
+                            <li class="name">Fallett</li>
+                            <li class="name">Brillpiece</li>
+                            <li class="name">GGAGGA</li>
+                            <li class="name">GOYU</li>
+                            <li class="name">herere</li>
+                        </ul>
+                        <ul id="name_wrap02" class="move_wrap">
+                            <li class="name">FlOPY</li>
+                            <li class="name">hap</li>
+                            <li class="name">goigoi</li>
+                            <li class="name">DEMOI</li>
+                            <li class="name">BEAK</li>
+                        </ul>
+                        <ul id="name_wrap03" class="move_wrap">
+                            <li class="name">clorainow</li>
+                            <li class="name">dydoshop</li>
+                            <li class="name">Aos Si</li>
+                            <li class="name">604service</li>
+                            <li class="name">atopos</li>
+                        </ul>
+                    </div>
+                    <div class="btn rig">
+                        <img src="cava_img/right36.png" alt=""></div>
+                </div>
+
+                <div id="search">
+                    <input type="text" id="sea" placeholder="search by number, artist, item, tag, etc">
+
+                    <input type="button" id="bbtn">
+                    <label for="bbtn" id="bttn"><img src="cava_img/right36.png" alt="검색아이콘"></label>
+                </div>
+                <div id="more_link"><a href="#">more artists list #.A to Z
+                    <img src="cava_img/right_24.png" alt="">
+                </a></div>
+
+            </div>
+        </section>
+        <!-- sec05 -->
+        <section id="sec05">
+            <div id="container03">
+                <div class="sub_conWrap">
+                    <div class="sub_box01">
+                        <div id="title_wrap02">Sell with us!</div>
+                    </div>
+                    <div class="sub_copy">
+                        <p>
+                            카바 라이프와 함께하세요!<br/>
+                            입점을 원하시는 경우 포트폴리오를 첨부하여 sell@ca-va.life로 문의 바랍니다.<br/>
+                            운영진의 내부 검토을 거친 후 입점 가능 여부를 개별 안내해드리고 있습니다.<br/>
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="sub_conWrap">
+                    <div class="sub_box01"><a href="#">
+                        <p>입점하기<img src="cava_img/up-right-arrow.png" alt=""></p>
+                    </a>
+                        
+                    </div>
+                    <div class="sub_copy">
+                        <div class="sub_co">
+                            CAVA LIFE와의 협업을 원하는 당신도<br/> 
+                            이메일을 보내주세요.<br/> 
+                            예술과 공간, 예술과 마케팅, 예술과 실험,<br/>  
+                            예술과 문화, 예술과 예술을 하고싶은 모두와<br/> 
+                            커뮤니케이션 합니다.
+                        </div>
+                        <div class="sub_co">
+                            작가인 당신이라면,<br/>  
+                            우리를 통해 판매하고 싶은 작품, 아이디어,<br/>  
+                            제안들을 포트폴리오와 함께 보내면 됩니다.<br/> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sec06 -->
+        <section id="sec06">
+            <div id="img_wrap">
+                <img src="cava_img/open_540h.png" alt="open_광고 이미지">
+                <div id="typo_box">
+                    <div id="sec06_title">CAVA SHOWROOM</div>
+                    <div id="sec06_copy">
+                        남영동에 위치한 카바 쇼룸은 화요일-일요일<br/>
+                        오후 14:00-19:00에 운영합니다.<br/>
+                        온라인으로만 볼 수 있었던 작품들을 직접 만나보세요.<br/>
+                        <br/>
+                        시간 | 매일 14:00 - 19:00 (월요일 휴무)<br/>
+                        주소 | 서울시 용산구 남영동 61-6 3층 CAVA LIFE
+                    </div>
+            </div>
+           
+            </div>
+        </section>
+
+
+        <!-- footer -->
+        <footer>
+            <div id="in_footer">
+                <ul id="f_center">
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">리테일 스토어</a></li>
+                    <li><a href="#">도움말</a></li>
+                    <li><a href="#">CAVALIFE PRO</a></li>
+                    <li><a href="#">추천 프로그램</a></li>
+                    <li><a href="#">제휴 프로그램</a></li>
+                </ul>
+
+                
+                <div id="f_bottom_ri">
+                    <p>
+                        &copy;CAVA 주식회사 카바라이프 사업자 등록번호 656-87-00143 대표 최지연<br/>
+                        서울시 용산구 한강대로 72길 21-21 070-8861-6884<br/>
+                        통신판매신고등록번호 2020-서울용산-0102
+                    </p>
+                </div>
+
+                <ul id="f_bottom_le">
+                    <li><a href="#">쿠키설정</a></li>
+                    <li><a href="#">구매이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                    <li><a href="#">공정거래 자율준수</a></li>
+                    <li><a href="#">채무지급보증안내</a></li>
+                </ul>
+
+                <div id="follow">
+                    <p>팔로우 하기</p>
+                    <div id="sns_img">
+                        <div class="sns"><img src="cava_img/twitter.png" alt=""></div>
+                        <div class="sns"><img src="cava_img/-.png" alt=""></div>
+                        <div class="sns"><img src="cava_img/facebook.png" alt=""></div>
+                        <div class="sns"><img src="cava_img/pinterest.png" alt=""></div>
+                    </div>
+                </div>
+
+                <div id="lang">
+                    <p>언어와 지역</p>
+                    <div id="lang_wrap">
+                        <div class="la"><img src="cava_img/korea.png" alt="">대한민국</div>
+                        <div class="la"><img src="cava_img/earth.png" alt="">한국어</div>
+                        <div class="la"><img src="cava_img/money.png" alt="">KRW</div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

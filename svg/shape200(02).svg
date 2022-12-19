@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 191.86 191.86">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-5 {
+        fill: url(#radial-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="95.93" cy="95.93" fx="95.93" fy="95.93" r="35.86" gradientTransform="translate(0 191.86) rotate(-90)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset=".23" stop-color="#020202"/>
+      <stop offset=".37" stop-color="#0a0a0a"/>
+      <stop offset=".48" stop-color="#181818"/>
+      <stop offset=".58" stop-color="#2c2c2c"/>
+      <stop offset=".67" stop-color="#474747"/>
+      <stop offset=".75" stop-color="#676767"/>
+      <stop offset=".83" stop-color="#8d8d8d"/>
+      <stop offset=".9" stop-color="#b9b9b9"/>
+      <stop offset=".97" stop-color="#e9e9e9"/>
+      <stop offset="1" stop-color="#fff"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="95.89" y1="84.53" x2="95.89" y2="14.01" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset=".23" stop-color="#020202"/>
+      <stop offset=".37" stop-color="#0a0a0a"/>
+      <stop offset=".48" stop-color="#181818"/>
+      <stop offset=".58" stop-color="#2c2c2c"/>
+      <stop offset=".67" stop-color="#474747"/>
+      <stop offset=".75" stop-color="#676767"/>
+      <stop offset=".83" stop-color="#8d8d8d"/>
+      <stop offset=".9" stop-color="#b9b9b9"/>
+      <stop offset=".97" stop-color="#e9e9e9"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="95.89" y1="84.53" x2="95.89" y2="14.01" gradientTransform="translate(0 191.86) rotate(-90)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="95.89" y1="84.53" x2="95.89" y2="14.01" gradientTransform="translate(191.86 191.86) rotate(-180)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="95.89" y1="84.53" x2="95.89" y2="14.01" gradientTransform="translate(191.86) rotate(90)" xlink:href="#linear-gradient"/>
+  </defs>
+  <circle class="cls-5" cx="95.93" cy="95.93" r="35.86"/>
+  <polygon class="cls-1" points="95.89 .83 92.68 95.64 99.11 95.64 95.89 .83"/>
+  <polygon class="cls-4" points=".83 95.97 95.64 99.18 95.64 92.75 .83 95.97"/>
+  <polygon class="cls-2" points="95.97 191.03 99.18 96.23 92.75 96.23 95.97 191.03"/>
+  <polygon class="cls-3" points="191.03 95.89 96.23 92.68 96.23 99.11 191.03 95.89"/>
+  <ellipse cx="143.9" cy="47.97" rx="66.27" ry="14.43" transform="translate(8.23 115.8) rotate(-45)"/>
+  <ellipse cx="47.97" cy="47.97" rx="14.43" ry="66.27" transform="translate(-19.87 47.97) rotate(-45)"/>
+  <ellipse cx="47.97" cy="143.9" rx="66.27" ry="14.43" transform="translate(-87.7 76.06) rotate(-45)"/>
+  <ellipse cx="143.9" cy="143.9" rx="14.43" ry="66.27" transform="translate(-59.6 143.9) rotate(-45)"/>
+</svg>
